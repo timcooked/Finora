@@ -19,15 +19,8 @@ const MyCalendar = () => {
 
     const filtered = Transactions.filter((t) => t.date === TempDate);
     setSelectedTransaction(filtered);
-
-    console.log("TempDate: ", TempDate);
-    console.log("Filtered: ", filtered);
   };
 
-  useEffect(() => {
-    console.log("Selectedtransaction: ", SelectedTransaction)
-
-  }, [SelectedDate])
 
   const hue = 120 - (Progress * 120) / 100;
   const colour = `hsl(${hue}, 98%, 50%)`;

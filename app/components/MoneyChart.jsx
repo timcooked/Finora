@@ -4,12 +4,10 @@ import { useMoney } from '../context.js/MoneyContext'
 
 const MoneyChart = () => {
   const {DatedTransactions} = useMoney()
-  console.log("datedTransaction", DatedTransactions)
   const TodaysDate = new Date().toLocaleDateString('en-CA')
    const TodaysMonth = TodaysDate.split("-")[1]
   const ThisMonthTransaction = DatedTransactions.filter(t => t.date.split("-")[1] === TodaysMonth)
 
-  console.log("2",ThisMonthTransaction)
   return (
     <div>
       <AreaChart width={900} height={300} data={ThisMonthTransaction}>

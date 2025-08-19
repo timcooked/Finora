@@ -12,7 +12,6 @@ const DateTransaction = () => {
         }
         return acc
     }, 0)
-    // console.log(EarnedList)
 
     const SpentList = TransactionList.reduce((acc, curr) => {
         if(curr.amount < 0){
@@ -23,7 +22,6 @@ const DateTransaction = () => {
     }, 0)
 
     const TotalList = [{name: "Earned", value: EarnedList}, {name: "Spent", value: SpentList}]
-    // console.log(SpentList)
 
   return (
     <div>

@@ -17,7 +17,6 @@ const BudgetGoals = ({width}) => {
     useEffect(() => {
         const oldBudget = Number(JSON.parse(localStorage.getItem("Budget")))
         setBudget(Number(oldBudget))
-        // console.log("oldbudget: ", oldBudget)
     }, [])
 
     let Spent = Transactions.reduce((acc, curr) => {
@@ -27,7 +26,6 @@ const BudgetGoals = ({width}) => {
 
         return acc
     }, 0)
-    console.log("Spent", Spent)
 
 
     const onsubmit = (e) => {
@@ -37,8 +35,7 @@ const BudgetGoals = ({width}) => {
     }
 
     useEffect(() => {
-      setProgress((((Spent) / Budget) * 100)) 
-     console.log(Progress)
+      setProgress((((Spent) / Budget) * 100))
       
      
      if(Progress >= 100){
@@ -49,8 +46,6 @@ const BudgetGoals = ({width}) => {
     const hue = 120 - (Progress * 120) / 100; 
     const colour = `hsl(${hue}, 98%, 50%)`;
 
-
-     console.log("value of progress is:", Progress)
 
     return (
         <div>

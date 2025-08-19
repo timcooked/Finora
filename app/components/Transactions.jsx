@@ -22,10 +22,6 @@ const Transactions = () => {
         localStorage.setItem("Transactions", JSON.stringify(Transactions))
     }, [Transactions])
 
-    useEffect(() => {
-        console.log("DatedTransaction was changed to: ", DatedTransactions)
-    }, [DatedTransactions])
-
 
     const {
         register,
@@ -66,10 +62,8 @@ const Transactions = () => {
 
 
     const TodaysDate = new Date().toLocaleDateString('en-CA')
-    console.log("todaysdate: ", TodaysDate)
     const currMonth = TodaysDate.split("-")[1]
     const ThisMonthTransactions = Transactions.filter(t => t.date.split("-")[1] === currMonth)
-    console.log("thismonthtransaction", ThisMonthTransactions)
 
 
 
@@ -100,14 +94,12 @@ const Transactions = () => {
     const edithandler = (index) => {
         reset(Transactions[index])
         setEditIdx(index)
-        // console.log("edithandler was clicked and value of editidx is: ", EditIdx)
     }
 
 
     const removehandler = (data) => {
         const updatedTransactions = Transactions.filter(Transaction => Transaction.id != data.id)
         setTransactions(updatedTransactions)
-        // console.log(data)
     }
 
 

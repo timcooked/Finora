@@ -22,7 +22,6 @@ const Chart = () => {
         const TodaysMonth = TodaysDate.split("-")[1]
     
     const TodaysTransactions = Transactions.filter(t => (t.date.split("-")[1]) === TodaysMonth)
-    console.log("TodaysTransactions1", TodaysTransactions)
         const GroupedData = TodaysTransactions.filter(t => (t.amount < 0)).reduce((acc,curr) => {
             const found = acc.find(item => item.name === curr.category)
             if(found){
@@ -34,7 +33,6 @@ const Chart = () => {
 
             return acc
         }, [])
-        // console.log(GroupedData)
         return (
             
             <PieChart width={400} height={500} >
