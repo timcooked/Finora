@@ -1,5 +1,5 @@
 "use client"
-import Dashboard from "./components/dashboard";
+import Dashboard from "./components/Dashboard";
 import Transactions from "./components/Transactions";
 import BudgetGoals from "./components/BudgetGoals";
 import MyCalendar from "./components/MyCalendar"
