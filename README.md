@@ -30,6 +30,5 @@ npm run dev
 
 ## 🌐 Deployment
 
-Easily deployable with [Vercel](https://vercel.com/) for a live and responsive experience.
-Drop a 💖 if you liked this post!
+Drop a 💖 if you liked this project!
 ---
