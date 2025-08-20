@@ -35,13 +35,11 @@ const BudgetGoals = ({width}) => {
     }
 
     useEffect(() => {
-      setProgress((((Spent) / Budget) * 100))
-      
-     
-     if(Progress >= 100){
-        setProgress(100)
-     }
-    }, [Transactions])
+  let newProgress = (Spent / Budget) * 100
+  if (newProgress > 100) newProgress = 100
+  setProgress(newProgress)
+  console.log("Updated Progress:", newProgress)
+}, [Transactions, Spent, Budget])
     
     const hue = 120 - (Progress * 120) / 100; 
     const colour = `hsl(${hue}, 98%, 50%)`;
