@@ -28,7 +28,5 @@ npm install
 npm run dev
 ```
 
-## 🌐 Deployment
-
 Drop a 💖 if you liked this project!
 ---
