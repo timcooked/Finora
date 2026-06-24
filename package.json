@@ -14,7 +14,7 @@
     "@schedule-x/react": "^2.36.0",
     "@schedule-x/theme-default": "^2.36.0",
     "file-saver": "^2.0.5",
-    "next": "15.4.5",
+    "next": "15.4.10",
     "react": "19.1.0",
     "react-calendar": "^6.0.0",
     "react-dom": "19.1.0",
