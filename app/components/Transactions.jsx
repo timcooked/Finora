@@ -139,6 +139,7 @@ const Transactions = () => {
                                     <option value="education">📚 Education</option>
                                     <option value="insurance">🛡️ Insurance</option>
                                     <option value="miscellaneous">✨ Miscellaneous</option>
+                                    <option value="payment">💸 Client Payment</option>
                                 </select>
                                 <button className='w-[25vw] border-2 bg-gray-800 border-white px-4 py-2 rounded-2xl hover:bg-green-500'>Add</button>
                             </div>
