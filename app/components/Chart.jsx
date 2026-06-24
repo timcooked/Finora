@@ -6,17 +6,19 @@ import { useMoney } from '../context.js/MoneyContext'
 const Chart = () => {
         const {Transactions} = useMoney()
         const COLORS = [
-  "#00FF88", // Neon Green
-  "#00FFF7", // Aqua Cyan
-  "#AA00FF", // Violet Purple
-  "#FF00FF", // Magenta Pink
-  "#FF0088", // Hot Pink
-  "#FF0033", // Neon Red
-  "#FF6600", // Neon Orange
-  "#FFEE00", // Neon Yellow
-  "#AAFF00", // Acid Lime
-  "#00FFCC", // Minty Teal
-  "#00AAFF", // Electric Blue
+  "#7BFF00", // Radioactive Green
+  "#39FF14", // Laser Green
+  "#00FFB3", // Neon Mint
+  "#00FFD5", // Bright Turquoise
+  "#00CFFF", // Sky Neon Blue
+  "#0088FF", // Electric Azure
+  "#3366FF", // Hyper Blue
+  "#6A00FF", // Deep Neon Purple
+  "#8F00FF", // Ultraviolet
+  "#C000FF", // Bright Orchid
+  "#E100FF", // Neon Fuchsia
+  "#FF00CC", // Electric Pink
+  "#FF1493", // Deep Pink
 ]
         const TodaysDate = new Date().toLocaleDateString('en-CA')
         const TodaysMonth = TodaysDate.split("-")[1]
